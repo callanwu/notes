@@ -1,4 +1,6 @@
 # Table of contents
 
-* [代码](README.md)
-  * [面试](dai-ma/mian-shi.md)
+* [base](README.md)
+  * [面试](base/mian-shi.md)
+* [coding](coding/README.md)
+  * [动态规划](coding/dong-tai-gui-hua.md)
