@@ -9,4 +9,3 @@
 * [base](base/README.md)
   * [Page 6](base/page-6.md)
   * [Page 7](base/page-7.md)
-* [readme](readme.md)
