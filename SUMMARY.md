@@ -1,9 +1,11 @@
 # Table of contents
 
 * [readme](README.md)
-* [project](project/README.md)
-  * [Page 5](project/page-5.md)
-  * [Page 4](project/page-4.md)
+* [Parameter-Efficient Fine-Tuning](parameter-efficient-fine-tuning/README.md)
+  * [LoRA](parameter-efficient-fine-tuning/lora.md)
+  * [Prefix Tuning](parameter-efficient-fine-tuning/prefix-tuning.md)
+  * [P-Tuning](parameter-efficient-fine-tuning/p-tuning.md)
+  * [Prompt Tuning](parameter-efficient-fine-tuning/prompt-tuning.md)
 * [base](base/README.md)
   * [Page 6](base/page-6.md)
   * [Page 7](base/page-7.md)
