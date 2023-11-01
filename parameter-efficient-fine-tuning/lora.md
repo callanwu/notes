@@ -11,6 +11,9 @@ $h = W_0 x + \Delta W x = W_0 x + BA x$
 
 LoRA 原文中大多数实验是对$ W_q$ 和 $W_v$ 进行低秩分解。
 
+params_num = r * embedding_size * 4
+($ W_q$ and  $W_v$ , r-> embedding_size and embedding_size -> r)
+
 During training, $W_0$ is frozen and does not receive gradient updates, while $A$ and $B$ contain trainable parameters.
 Note both $W_0$ and $\Delta W=BA$ are multiplied with the same input, and their respective output vectors are summed coordinate-wise.
 For $h = W_0x$, our modified forward pass yields:
