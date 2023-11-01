@@ -3,7 +3,6 @@
 * [readme](README.md)
 * [Transformer](transformer/README.md)
   * [Norm](transformer/norm.md)
-* [Base-model](transformer/README.md)
 * [Parameter-Efficient Fine-Tuning](parameter-efficient-fine-tuning/README.md)
   * [LoRA](parameter-efficient-fine-tuning/lora.md)
   * [LongLoRA](parameter-efficient-fine-tuning/longlora.md)
