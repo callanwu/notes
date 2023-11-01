@@ -4,4 +4,4 @@ Prefix-Tuning 在模型输入前添加一个连续的且任务特定的向量序
 
 将可训练的的张量添加到所有transformer层，与K/V拼接。
 
-params_num = virtual_tokens_num * 2 * layer_num * embedding_size
+params_num = virtual_tokens_num * 2 * layer_num * embedding_size ($ W_k$ and $W_v$)
