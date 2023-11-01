@@ -1,2 +1,1 @@
-# readme
-
+# Convey a knowledge point succinctly.
