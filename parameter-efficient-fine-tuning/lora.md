@@ -2,11 +2,9 @@
 
 预训练的语言模型具有较低的内在维度。
 
-$$f(x) = x * e^{2 pi i \xi x}$$
+对于预训练的权重矩阵 ，通过低秩分解$$W_0\in \mathbb{R}^{d\times k}$$, where $$W_0+\Delta W=W_0+BA$$, where$$B\in \mathbb{R}^{d\times r}, A\in \mathbb{R}^{r\times k}$$表示,后者来约束其更新，秩 $$r \ll \min(d,k)$$ 。
 
-对于预训练的权重矩阵\$$ W\_0\in \mathbb{R}^{d\times k} \$$，通过低秩分解 $W\_0+\Delta W=W\_0+BA$, where $B\in \mathbb{R}^{d\times r}, A\in \mathbb{R}^{r\times k}$ 表示,后者来约束其更新，秩 $r \ll \min(d,k)$ 。
-
-在训练期间， $W\_0$ 被冻结并且不接收梯度更新，而$A$和$B$包含可训练参数。注意，$W\_0$ 和 $\Delta W=BA$ 都与相同的输入相乘，并且它们各自的输出矢量在坐标方向上相加。对于 $h = W\_0x$,，修改的前向传递产生： $h = W\_0 x + \Delta W x = W\_0 x + BA x$
+在训练期间， $$W_0$$ 被冻结并且不接收梯度更新，而$$A$$和$$B$$包含可训练参数。注意，$W\_0$ 和 $\Delta W=BA$ 都与相同的输入相乘，并且它们各自的输出矢量在坐标方向上相加。对于 $h = W\_0x$,，修改的前向传递产生： $h = W\_0 x + \Delta W x = W\_0 x + BA x$
 
 对 $A$ 使用随机高斯初始化，对 $B$ 使用零初始化，因此$\Delta W=BA$在训练开始时为零。
 
