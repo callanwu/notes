@@ -1,6 +1,8 @@
 # Table of contents
 
 * [readme](README.md)
+* [train-and-inference](train-and-inference.md)
+* [base-model](base-model.md)
 * [Transformer](transformer/README.md)
   * [Norm](transformer/norm.md)
 * [Parameter-Efficient Fine-Tuning](parameter-efficient-fine-tuning/README.md)
