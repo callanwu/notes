@@ -1,8 +1,12 @@
 # Table of contents
 
 * [readme](README.md)
-* [train-and-inference](train-and-inference.md)
-* [base-model](base-model.md)
+* [train-and-inference](train-and-inference/README.md)
+  * [flops](train-and-inference/flops.md)
+* [base-model](base-model/README.md)
+  * [LLaMA](base-model/llama.md)
+  * [ChatGLM](base-model/chatglm.md)
+  * [BLOOM](base-model/bloom.md)
 * [Transformer](transformer/README.md)
   * [Norm](transformer/norm.md)
 * [Parameter-Efficient Fine-Tuning](parameter-efficient-fine-tuning/README.md)
