@@ -1,7 +1,6 @@
 # Table of contents
 
-* [readme](README.md)
-* [train-and-inference](train-and-inference/README.md)
+* [train-and-inference](README.md)
   * [flops](train-and-inference/flops.md)
 * [base-model](base-model/README.md)
   * [LLaMA](base-model/llama.md)
@@ -18,5 +17,5 @@
   * [P-tuning-v2](parameter-efficient-fine-tuning/p-tuning-v2.md)
   * [Prompt Tuning](parameter-efficient-fine-tuning/prompt-tuning.md)
 * [Long Context Extension](long-context-extension/README.md)
-  * [Page 6](long-context-extension/page-6.md)
-  * [Page 7](long-context-extension/page-7.md)
+  * [RoPE](long-context-extension/page-6.md)
+  * [ALiBi](long-context-extension/page-7.md)
