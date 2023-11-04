@@ -1,4 +1,10 @@
 # Adapter
 
-Adapter在attention层和FFN层之后插入了adapter层。
-每个Adapter模块由两个前馈子层组成，即两层MLP。
+每个Adapter模块由两个前馈子层组成，第一个前馈子层将Transformer块的输出作为输入，将原始输入维度d投影到m，通过控制m的大小来限制Adapter模块的参数量，通常情况下m<\<d。位置都在LN 之前。
+
+每个 Adapter 由两个 FFN, 一个非线性函数组成, 和一个残差连接组成。
+
+残差连接用于保证参数随机初始化时，模型输出与预训练模型输出一致。
+
+这样一个 Adapter 模型需要 (dm+m) + (dm+d)参数
+

@@ -4,6 +4,6 @@
 
 不需要加入 MLP 进行调整。
 
-Prompt Tuning采用类标签初始化模型的效果更好。
+Prompt Tuning采用类标签初始化模型的效果更好。在peft框架中，设置prompt\_tuning\_init，在prompt-tuning\_init\_tetx中输出类标签，即本来的prompt，例如 predict if sentiment of this review is positive, negative or neutral.
 
-params_num = virtual_tokens_num * embedding_size
+params\_num = virtual\_tokens\_num \* embedding\_size

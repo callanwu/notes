@@ -4,8 +4,10 @@ Prefix-Tuning 在模型输入前添加一个连续的且任务特定的向量序
 
 在Prefix层前面加了MLP结构，训练完成后，只保留Prefix的参数。每层都加入prefix。
 
+Use a two-layer MLP to encode the prefix.
+
 Prefix-tuning也是要略优于Infix-tuning的。
 
 将可训练的的张量添加到所有transformer层，与K/V拼接。
 
-params_num = virtual_tokens_num * 2 * layer_num * embedding_size ($ W_k$ and $W_v$)
+params\_num = virtual\_tokens\_num \* 2 \* layer\_num \* embedding\_size ($$W_k$$ and $$W_v$$)
