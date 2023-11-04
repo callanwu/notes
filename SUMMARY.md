@@ -1,8 +1,6 @@
 # Table of contents
 
-* [train-and-inference](README.md)
-  * [flops](train-and-inference/flops.md)
-* [base-model](base-model/README.md)
+* [base-model](README.md)
   * [LLaMA](base-model/llama.md)
   * [ChatGLM](base-model/chatglm.md)
   * [BLOOM](base-model/bloom.md)
@@ -19,3 +17,5 @@
 * [Long Context Extension](long-context-extension/README.md)
   * [RoPE](long-context-extension/page-6.md)
   * [ALiBi](long-context-extension/page-7.md)
+* [train and inference](train-and-inference/README.md)
+  * [Flops](train-and-inference/flops.md)
