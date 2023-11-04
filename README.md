@@ -1,21 +1,25 @@
 # Table of Contents
 
-* base-model
+* Table of Contents
+* Parameter-Efficient Fine-Tuning
+  * Prompt Tuning
+  * P-Tuning
+  * Prefix Tuning
+  * P-tuning-v2
+  * Adapter
+  * LLaMA-Adapter
+  * LoRA
+  * LongLoRA
+* Base Model
   * LLaMA
-  * ChatGLM
+  * ChatGLM1
+  * ChatGLM2
+  * ChatGLM3
   * BLOOM
 * Transformer
   * Norm
-* Parameter-Efficient Fine-Tuning
-  * LoRA
-  * LongLoRA
-  * Prefix Tuning
-  * LLaMA-Adapter
-  * P-Tuning
-  * P-tuning-v2
-  * Prompt Tuning
 * Long Context Extension
   * RoPE
   * ALiBi
-* train and inference
+* Train and Inference
   * Flops
