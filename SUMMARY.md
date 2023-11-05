@@ -29,3 +29,4 @@
   * [ALiBi](long-context-extension/page-7.md)
 * [Train and Inference](train-and-inference/README.md)
   * [Flops](train-and-inference/flops.md)
+  * [Speculative Decoding](train-and-inference/speculative-decoding.md)
