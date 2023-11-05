@@ -23,3 +23,7 @@ We use a random Gaussian initialization for $$A$$ and zero for $$B$$, so $$\Delt
 
 
 params\_num = L \* 2 \*  r \* embedding\_size  ($$W_q$$ and $$W_v$$)
+
+Model Code：
+
+[https://github.com/huggingface/peft/blob/main/src/peft/tuners/lora.py](https://github.com/huggingface/peft/blob/main/src/peft/tuners/lora.py)
