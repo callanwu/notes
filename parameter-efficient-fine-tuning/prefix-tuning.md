@@ -11,3 +11,5 @@ Prefix-tuning也是要略优于Infix-tuning的。
 将可训练的的张量添加到所有transformer层，与K/V拼接。
 
 params\_num = virtual\_tokens\_num \* 2 \* layer\_num \* embedding\_size ($$W_k$$ and $$W_v$$)
+
+Code：[https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21](https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21)
