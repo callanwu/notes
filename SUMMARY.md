@@ -5,7 +5,7 @@
   * [Prompt Tuning](parameter-efficient-fine-tuning/prompt-tuning.md)
   * [P-Tuning](parameter-efficient-fine-tuning/p-tuning.md)
   * [Prefix Tuning](parameter-efficient-fine-tuning/prefix-tuning.md)
-  * [P-tuning-v2](parameter-efficient-fine-tuning/p-tuning-v2.md)
+  * [P-tuning v2](parameter-efficient-fine-tuning/p-tuning-v2.md)
   * [Adapter](parameter-efficient-fine-tuning/adapter.md)
   * [LLaMA-Adapter](parameter-efficient-fine-tuning/LLaMA-Adapter.md)
   * [LoRA](parameter-efficient-fine-tuning/lora.md)

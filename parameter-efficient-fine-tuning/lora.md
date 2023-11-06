@@ -26,4 +26,4 @@ params\_num = L \* 2 \*  r \* embedding\_size  ($$W_q$$ and $$W_v$$)
 
 Model Code：
 
-[https://github.com/huggingface/peft/blob/main/src/peft/tuners/lora.py](https://github.com/huggingface/peft/blob/main/src/peft/tuners/lora.py)
+[https://github.com/huggingface/peft/tree/main/src/peft/tuners/lora](https://github.com/huggingface/peft/tree/main/src/peft/tuners/lora)
