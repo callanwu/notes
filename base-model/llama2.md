@@ -14,4 +14,6 @@ Group-Query Attention(GQA)子层参数量：
 
 head\_num\*attention\_dim\*embedding\_dim+1/8\*2\*head\_num\*attention\_dim\*embedding\_dim+embedding\_dim\*embedding\_dim($$W_q$$、$$W_k$$、$$W_v$$+$$W_o$$)
 
+Code：[https://github.com/facebookresearch/llama/blob/main/llama/model.py#L291C1-L293](https://github.com/facebookresearch/llama/blob/main/llama/model.py#L291C1-L293)
+
 * 扩充了FFN子层的维度：增强泛化能力，整体参数量有增加
