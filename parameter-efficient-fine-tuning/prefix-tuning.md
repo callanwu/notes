@@ -1,15 +1,19 @@
 # Prefix Tuning
 
-Prefix-Tuning 在模型输入前添加一个连续的且任务特定的向量序列（continuous task-specific vectors），称之为前缀（prefix）。前缀被视为一系列“虚拟 tokens”，但是它由不对应于真实 tokens 的自由参数组成。与更新所有 PLM 参数的全量微调不同，Prefix-Tuning 固定 PLM 的所有参数，只更新优化特定任务的 prefix。因此，在生产部署时，只需要存储一个大型 PLM 的副本和一个学习到的特定任务的 prefix，每个下游任务只产生非常小的额外的计算和存储开销。
-
-在Prefix层前面加了MLP结构，训练完成后，只保留Prefix的参数。每层都加入prefix。
+Prefix tuning keeps language model parameters frozen, but optimizes a small continuous task-specific vector which pretends to $$h_i$$($$h_i$$ is composed of a key-value pair).
 
 Use a two-layer MLP to encode the prefix.
 
-Prefix-tuning也是要略优于Infix-tuning的。
+Prefix tuning outperforms fine-tuning in low-data regimes.
 
-将可训练的的张量添加到所有transformer层，与K/V拼接。
+Preserving LM parameters indeed has a positive impact on extrapolation.
 
-params\_num = virtual\_tokens\_num \* 2 \* layer\_num \* embedding\_size ($$W_k$$ and $$W_v$$)
+Performance changes non-monotonically in trainable parameters.
+
+Chain of increasing expressive power: discrete prompting < embedding-only ablation < prefix-tuning.
+
+Prefix-tuning outperforms infix-tuning.&#x20;
+
+params\_num = virtual\_tokens\_num \* 2 \* L \* $$d_{model}$$ ($$W_k$$ and $$W_v$$)
 
 Code：[https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21](https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21)
