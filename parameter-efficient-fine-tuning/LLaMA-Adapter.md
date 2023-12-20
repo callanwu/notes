@@ -7,4 +7,8 @@
 * 引入了零初始化的注意力机制和门控机制
 * 只修改深层的L个transformer层
 
-params\_num = L \* virtual\_tokens\_num \* embedding\_size + L (adaption\_prompt + adaption\_gate)
+params\_num = L \* virtual\_tokens\_num \* $$d_{model}$$ + L  (adaption\_prompt + adaption\_gate)
+
+Paper:
+
+[https://arxiv.org/pdf/2303.16199.pdf](https://arxiv.org/pdf/2303.16199.pdf)

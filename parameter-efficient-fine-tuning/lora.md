@@ -29,6 +29,10 @@ Some tips:
 
 params\_num = L \* 2 \*  $$d_{model}$$ \* embedding\_size \* 2  ($$W_q$$ and $$W_v$$)
 
+Paper:
+
+[https://arxiv.org/pdf/2106.09685.pdf](https://arxiv.org/pdf/2106.09685.pdf)
+
 Model Code：
 
 [https://github.com/huggingface/peft/tree/main/src/peft/tuners/lora](https://github.com/huggingface/peft/tree/main/src/peft/tuners/lora)

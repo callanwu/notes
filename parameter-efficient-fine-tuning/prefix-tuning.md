@@ -16,4 +16,8 @@ Prefix-tuning outperforms infix-tuning.&#x20;
 
 params\_num = virtual\_tokens\_num \* 2 \* L \* $$d_{model}$$ ($$W_k$$ and $$W_v$$)
 
+Paper:
+
+[https://arxiv.org/pdf/2104.08691.pdf](https://arxiv.org/pdf/2104.08691.pdf)
+
 Code：[https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21](https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21)

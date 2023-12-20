@@ -11,4 +11,8 @@ Prefix Tuning 与 P-Tuning v2 最主要的差别就是是否使用MLP进行重�
 
 In both prefix-tuning and Ptuning, authors discover the reparameterization to be useful in improving training speed, robustness and performance. However, we conduct experiments to show that the reparameterization effect is inconsistent across different NLU tasks and datasets.
 
+Paper:
+
+[https://arxiv.org/pdf/2104.08691.pdf](https://arxiv.org/pdf/2104.08691.pdf)
+
 Code：[https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21](https://github.com/huggingface/peft/blob/02f0a4ca5992bf516b9807c5870811ef8ad199fa/src/peft/tuners/prefix\_tuning/model.py#L21)
