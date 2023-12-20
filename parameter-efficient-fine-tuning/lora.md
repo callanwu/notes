@@ -20,7 +20,12 @@ $$
 
 We use a random Gaussian initialization for $$A$$ and zero for $$B$$, so $$\Delta W=BA$$ is zero at the beginning of training.
 
+**Scaling factor.** Once the low-rank update to the weight matrix is derived, we scale it by a factor α prior to adding it to the model’s pretrained weights. The value of α can be changed to balance the importance of the pretrained model and new task-specific adaptation.
 
+**Comparison to adapter layers.** At first glance, the approach used by LoRA might seem similar to adapter layers. However, there are two notable differences:
+
+1. There is no non-linearity between the two linear projections.
+2. The rank decomposition matrix is injected into an existing layer of the model, instead of being sequentially added as an extra layer.
 
 params\_num = L \* 2 \*  r \* embedding\_size \* 2  ($$W_q$$ and $$W_v$$)
 
