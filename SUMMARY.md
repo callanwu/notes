@@ -39,7 +39,7 @@
     * [Grouped-Query Attention(GQA)](transformer/attention/grouped-query-attention-gqa.md)
   * [Norm](transformer/norm/README.md)
     * [Position](transformer/norm/position.md)
-    * [Methods](transformer/norm/methods.md)
+  * [Activation function](transformer/activation-function.md)
 * [Long Context Extension](long-context-extension/README.md)
   * [Positional Interpolation](long-context-extension/positional-interpolation.md)
   * [NTK-Aware Scaled RoPE](long-context-extension/ntk-aware-scaled-rope.md)

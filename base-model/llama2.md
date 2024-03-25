@@ -10,7 +10,7 @@ Architecture
 * Pre-normalization using RMSNorm
 * SwiGLU activation function
 * Rotary Embeddings
-* Bigger models(34B and 70B) use Grouped-Query Attention (GQA) for improved inference scalability.
+* Bigger models(34B and 70B) use Grouped-Query Attention (GQA,  8 KV projections) for improved inference scalability.
 * Increase the dimension of the feed-forward layers(1.3)
 * Context Length is 4k
 

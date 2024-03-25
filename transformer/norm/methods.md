@@ -1,8 +1,0 @@
-# Methods
-
-## LayerNorm
-
-## RMSNorm
-
-## DeepNorm
-
