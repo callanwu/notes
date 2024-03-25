@@ -1,9 +1,18 @@
 # LLaMA
 
-LLaMA是Meta提出的大语言模型。训练数据是以英语为主的拉丁语系，另外还包含了来自GitHub的代码数据。训练数据以英文为主，不包含中韩日文，所有训练数据都是开源的，分词之后大约有1400B的tokens。
+Pre-training Data
 
-* 使用了pre-layer Norm
-* 激活函数使用了SwiGLU
-* 采用了旋转位置编码RoPE
-* 使用了Sentence Piece作为tokenizer，词表大小只有32000，即把token切得很碎，需要多个token才能表示一个汉字
+* Textual and code data.
+* Cover 20 languages, which use either the Latin or Cyrillic. Chinese are not covered.
+* Use the byte-pair encoding (BPE) algorithm to tokenize the data. The vocabulary size is 32000.
+* LLaMA-33B and LLaMA65B were trained on 1.4T tokens. The smaller models were trained on 1.0T tokens.
 
+Architecture
+
+* Pre-normalization using RMSNorm
+* SwiGLU activation function
+* Rotary Embeddings
+
+Implementation
+
+* FlashAttention

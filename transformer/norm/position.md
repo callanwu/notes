@@ -7,5 +7,4 @@
 
 ## PreLN
 
-* PreLN将layerNorm放置在残差链接的过程中。
-* 相比PostLN，使用PreLN的深层transforme的训练更稳定，但是性能有一定损伤。
+* To improve the training stability, we normalize the input of each transformer sub-layer instead of normalizing the output. \[LLaMA2 paper]
